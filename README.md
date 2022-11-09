@@ -43,7 +43,8 @@ const App = () => {
       onChange={(vals: string[]) => setValues(vals)}
       placeholder="Inserisci testo"
       className="my-search-tags"
-      itemClassName="my-tag"/>
+      itemClassName="my-tag"
+      closeItemCmp={'x'}/>
 }
 ```
 

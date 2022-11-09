@@ -3,7 +3,7 @@ import ReactInputLabels from 'react-input-labels'
 import 'react-input-labels/dist/index.css'
 
 const App = () => {
-  const [values, setValues] = useState<string[]>([])
+  const [values, setValues] = useState<string[]>(['xx'])
 
 
 
@@ -13,7 +13,9 @@ const App = () => {
       onChange={(vals: string[]) => setValues(vals)}
       placeholder="Inserisci testo"
       className="my-search-tags"
-      itemClassName="my-tag"/>
+      itemClassName="my-tag"
+      closeItemCmp={'x'}
+      />
 
     <p>Current values: {values.join(', ')}</p>
   </>

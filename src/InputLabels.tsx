@@ -6,7 +6,7 @@ import styles from './InputLabels.module.css'
 
 const CodeItemList = (props: ReactInputLabelsProps) => {
   const { values, onChange, placeholder, 
-    className, itemClassName } = props;
+    className, itemClassName, closeItemCmp } = props;
   const [value, setValue] = useState('')
 
   const valueChangeHandler = (e: any) => {
@@ -34,6 +34,7 @@ const CodeItemList = (props: ReactInputLabelsProps) => {
         value={lv}
         onRemoveClick={onRemoveClickHandler}
         itemClassName={itemClassName}
+        closeItemCmp={closeItemCmp}
       />
     })
   }

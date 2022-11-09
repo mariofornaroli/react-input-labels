@@ -1,23 +1,27 @@
 .label-item {
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 1.2rem;
   color: #333;
   border: 1px solid #333;
+  border-radius: 50px;
   outline: none;
-  cursor: pointer;
   margin-right: 0.8rem;
   text-align: center;
-  padding: 0.2rem;
-  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.label-item:focus {
-  border: 2px solid #4caf50;
-  box-shadow: 0 0 5pt 0.5pt #4caf4f6e;
+.label-item span {
+  margin-right: 0.3rem;
 }
 
-.label-item:disabled {
-  color: #999;
-  border-color: #999;
+.label-item button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #333;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

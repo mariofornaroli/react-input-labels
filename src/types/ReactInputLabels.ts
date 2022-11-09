@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 
 export interface ReactInputLabelsProps {
     suggestions?: string[];
@@ -6,6 +7,7 @@ export interface ReactInputLabelsProps {
     values: string[];
     onChange: Function;
     placeholder?: string;
+    closeItemCmp?: ReactNode
 }
 
 
