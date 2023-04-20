@@ -6,7 +6,7 @@ import styles from './InputLabels.module.css'
 
 const CodeItemList = (props: ReactInputLabelsProps) => {
   const { values, onChange, placeholder, 
-    className, itemClassName, closeItemCmp } = props;
+    className, itemClassName, closeItemCmp, inputClassName } = props;
   const [value, setValue] = useState('')
 
   const valueChangeHandler = (e: any) => {
@@ -47,7 +47,8 @@ const CodeItemList = (props: ReactInputLabelsProps) => {
           value={value}
           onChange={valueChangeHandler}
           placeholder={placeholder}
-          onKeyPress={onKeyDownHandler} />
+          onKeyPress={onKeyDownHandler}
+          className={`tag-input ${inputClassName}`} />
       </div>
     </React.Fragment>)
 }

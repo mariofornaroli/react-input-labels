@@ -7,7 +7,8 @@ export interface ReactInputLabelsProps {
     values: string[];
     onChange: Function;
     placeholder?: string;
-    closeItemCmp?: ReactNode
+    closeItemCmp?: ReactNode;
+    inputClassName?: string;
 }
 
 

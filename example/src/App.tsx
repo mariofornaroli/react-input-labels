@@ -14,6 +14,7 @@ const App = () => {
       placeholder="Inserisci testo"
       className="my-search-tags"
       itemClassName="my-tag"
+      inputClassName="my-tag-input"
       closeItemCmp={'x'}
       />
 
