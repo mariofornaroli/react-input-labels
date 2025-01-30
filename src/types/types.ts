@@ -10,6 +10,3 @@ export interface ReactInputLabelsProps {
     closeItemCmp?: ReactNode;
     inputClassName?: string;
 }
-
-
-

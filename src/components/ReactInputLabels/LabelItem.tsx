@@ -1,5 +1,4 @@
 import * as React from 'react'
-import styles from './LabelItem.module.css'
 
 export interface LabelItemProps {
   itemClassName?: string;
@@ -14,7 +13,7 @@ const LabelItem = (props: LabelItemProps) => {
   return (
     <React.Fragment> 
         <div 
-        className={`label-item ${styles['label-item']} ${itemClassName}`}>
+        className={`label-item} ${itemClassName}`}>
           <span>{value}</span>
           <button
           onClick={() => onRemoveClick(value)}>{closeItemCmp || 'x'}</button>

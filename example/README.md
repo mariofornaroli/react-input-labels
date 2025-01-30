@@ -1,5 +1,10 @@
-This example was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## App di esempio per testare preview a runtime
 
-It is linked to the react-input-labels package in the parent directory for development purposes.
-
-You can run `npm install` and then `npm start` to test your package.
+From preview-module root:  
+- `nvm use 20`
+- `npm run build`
+- `npm pack`
+- copy `.tgz` file into `example` folder
+- `cd example`
+- `npm install`
+- `npm run start`

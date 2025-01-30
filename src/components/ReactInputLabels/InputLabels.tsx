@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { useState } from 'react';
 import LabelItem from './LabelItem';
-import { ReactInputLabelsProps } from './types/ReactInputLabels';
-import styles from './InputLabels.module.css'
+// import './InputLabels.scss'
+import { ReactInputLabelsProps } from '../../types/types';
 
 const CodeItemList = (props: ReactInputLabelsProps) => {
   const { values, onChange, placeholder, 
@@ -27,7 +27,7 @@ const CodeItemList = (props: ReactInputLabelsProps) => {
     onChange(values.filter(v => v != _val))
   }
 
-  const getLabels = (): JSX.Element[] => {
+  const getLabels = (): any[] => {
     return values.map((lv: string, i: number) => {
       return <LabelItem
         key={`item-${i}`}
@@ -41,7 +41,7 @@ const CodeItemList = (props: ReactInputLabelsProps) => {
 
   return (
     <React.Fragment>
-      <div className={`codes-container ${className} ${styles['codes-container']}`}>
+      <div className={`codes-container ${className}`}>
         {getLabels()}
         <input
           value={value}
