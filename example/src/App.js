@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "react-input-labels/src/scss/core.scss";
 import ReactInputLabels from 'react-input-labels'
 
 const App = () => {

@@ -1,6 +1,6 @@
 {
   "name": "react-input-labels",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React component to insert a sereis of input in form of labels",
   "author": {
       "name": "Mario Fornaroli",
@@ -47,8 +47,8 @@
       "webpack-cli": "^6.0.1"
   },
   "peerDependencies": {
-      "react": "^18.3.0",
-      "react-dom": "^18.3.0"
+      "react": ">=16.8.0",
+      "react-dom": ">=16.8.0"
   },
   "overrides": {
       "typescript": "^5.7.3"
