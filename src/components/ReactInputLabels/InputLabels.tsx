@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useState } from 'react';
 import LabelItem from './LabelItem';
-// import './InputLabels.scss'
+import './InputLabels.scss'
 import { ReactInputLabelsProps } from '../../types/types';
 
 const CodeItemList = (props: ReactInputLabelsProps) => {
